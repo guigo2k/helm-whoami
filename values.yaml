@@ -1,0 +1,6 @@
+replicas: 1
+image: containous/whoami
+tag: latest
+
+ingress:
+  rule: Path("/whoami")
