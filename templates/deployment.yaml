@@ -20,3 +20,5 @@ spec:
           image: "{{ .Values.image }}:{{ .Values.tag }}"
           ports:
             - containerPort: 80
+          env:
+            {{- toYaml .Values.env | nindent 12 }}
