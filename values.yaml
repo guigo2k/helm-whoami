@@ -3,4 +3,5 @@ image: containous/whoami
 tag: latest
 
 ingress:
+  enabled: true
   rule: Path("/whoami")
